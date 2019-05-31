@@ -1,0 +1,15 @@
+{
+  "name": "frangen",
+  "version": "2.0.2",
+  "description": "A CLI utility for the generation of nicknames for Fran",
+  "main": "cli.js",
+  "scripts": {
+    "test": "echo \"Tests are for losers\"&& exit 1"
+  },
+  "bin": {
+    "frangen": "./cli.js"
+  },
+  "files": ["names.txt"],
+  "author": "Dave",
+  "license": "GPL-3.0-or-later"
+}
