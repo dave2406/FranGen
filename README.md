@@ -12,4 +12,5 @@ This project uses modified angular commit format:
     style: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
     test: Adding missing tests or correcting existing tests
 
+So for example adding a name could have commit message `Name(celeb): Add Scarlet JoFransson`
 This allows automatic publishing to npm with any user-facing changes.
