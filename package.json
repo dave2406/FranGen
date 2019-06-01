@@ -1,15 +1,25 @@
 {
   "name": "frangen",
-  "version": "2.0.2",
+  "version": "0.0.0-development",
   "description": "A CLI utility for the generation of nicknames for Fran",
   "main": "cli.js",
   "scripts": {
-    "test": "echo \"Tests are for losers\"&& exit 1"
+    "test": "echo \"Tests are for losers\"&& exit 1",
+    "semantic-release": "semantic-release"
   },
   "bin": {
     "frangen": "./cli.js"
   },
-  "files": ["names.txt"],
+  "files": [
+    "names.txt"
+  ],
   "author": "Dave",
-  "license": "GPL-3.0-or-later"
+  "license": "GPL-3.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dave2406/FranGen.git"
+  },
+  "devDependencies": {
+    "semantic-release": "^15.13.12"
+  }
 }
