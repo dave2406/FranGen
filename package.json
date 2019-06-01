@@ -27,7 +27,7 @@
       ["@semantic-release/commit-analyzer", {
         "preset": "angular",
         "releaseRules": [
-          {"type": "name", "scope": "names", "release": "minor"}
+          {"type": "name",  "release": "minor"}
         ]
       }],
       "@semantic-release/release-notes-generator"
