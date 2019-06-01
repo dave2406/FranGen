@@ -21,5 +21,16 @@
   },
   "devDependencies": {
     "semantic-release": "^15.13.12"
+  },
+  "release":{
+    "plugins": [
+      ["@semantic-release/commit-analyzer", {
+        "preset": "angular",
+        "releaseRules": [
+          {"type": "Name", "scope": "names", "release": "minor"}
+        ]
+      }],
+      "@semantic-release/release-notes-generator"
+    ]
   }
 }
