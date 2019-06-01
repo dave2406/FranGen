@@ -4,7 +4,7 @@
   "description": "A CLI utility for the generation of nicknames for Fran",
   "main": "cli.js",
   "scripts": {
-    "test": "echo \"Tests are for losers\"",
+    "test": "echo \"Tests are for losers!\"",
     "semantic-release": "semantic-release"
   },
   "bin": {
