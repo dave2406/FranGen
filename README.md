@@ -3,7 +3,7 @@ A CLI utility and importable package for the generation of nicknames for Fran, d
 
 To use, install globally with command `npm i -g frangen` then use command `frangen` to generate a name. It is also possible to generate multiple names at once: `frangen 5`, for example, would generate 5 fran names.
 
-Frangen can now be used as an imported package! To use it, import and then call method getFran.
+Frangen can now be used as an imported package! To use it, import and then call method `getFran`.
 
 This project uses modified angular commit format:
 
