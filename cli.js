@@ -14,3 +14,11 @@ fs.readFile(`${__dirname}/names.txt`, (err, data) => {
     else console.log("Unrecognised command line option");
     }
 );
+module.exports.getFran = () => {
+    fs.readFile(`${__dirname}/names.txt`, (err, data) => { 
+    if (err) throw err;
+    var names = data.toString().split(/\r?\n/);
+    return names[Math.floor(Math.random()*names.length)];
+    }
+);
+}
