@@ -19,6 +19,7 @@ fs.readFile(`${__dirname}/names.txt`, (err, data) => {
     else if (args[0]=="cowsay"){console.log(cowsay.say({text : names[Math.floor(Math.random()*names.length)], e : "oO", T : "U "}))}
     else if (args[0]=="say" && args[1]=="frandom"){console.log([cowboy_fran, astronaut_fran,mario_fran][Math.floor(Math.random() * 3)].replace("$name", names[Math.floor(Math.random()*names.length)]))}
     else if (args[0]=="say"){console.log(default_fran.replace("$name", names[Math.floor(Math.random()*names.length)]))}
+    else if (args[0]=="help"||args[0]=="-h"){console.log("Welcome to frangen! Available commands are: all, say (frandom/-r), cowsay, help/-h")}
     else console.log("Unrecognised command line option");
     }
 );
