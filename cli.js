@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 const fs =require("fs");
+var cowsay = require("cowsay");
 const [,, ...args] = process.argv;
 
 fs.readFile(`${__dirname}/names.txt`, (err, data) => { 
@@ -11,6 +12,7 @@ fs.readFile(`${__dirname}/names.txt`, (err, data) => {
             console.log(names[Math.floor(Math.random()*names.length)]);
         }
     else if (args[0]=="all"){console.log(names)}
+    else if (args[0]=="cowsay"){console.log(cowsay.say({text : names[Math.floor(Math.random()*names.length)], e : "oO", T : "U "}))}
     else console.log("Unrecognised command line option");
     }
 );

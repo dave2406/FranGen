@@ -22,16 +22,25 @@
   "devDependencies": {
     "semantic-release": "^15.13.12"
   },
-  "release":{
+  "release": {
     "plugins": [
-      ["@semantic-release/commit-analyzer", {
-        "preset": "angular",
-        "releaseRules": [
-          {"type": "name",  "release": "minor"}
-        ]
-      }],
+      [
+        "@semantic-release/commit-analyzer",
+        {
+          "preset": "angular",
+          "releaseRules": [
+            {
+              "type": "name",
+              "release": "minor"
+            }
+          ]
+        }
+      ],
       "@semantic-release/release-notes-generator",
       "@semantic-release/npm"
     ]
+  },
+  "dependencies": {
+    "cowsay": "^1.4.0"
   }
 }
