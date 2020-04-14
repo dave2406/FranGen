@@ -32,6 +32,10 @@
             {
               "type": "name",
               "release": "minor"
+            },
+            {
+              "type": "fran",
+              "release": "minor"
             }
           ]
         }

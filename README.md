@@ -9,9 +9,12 @@ Frangen can now be used as an imported package! To use it, import and then call 
 Frangen now has [cowsay](https://github.com/piuccio/cowsay) integration!
 The command `frangen cowsay` will generate a fran to be read by a cow.
 
+You can also now have your fran name read by a horrifying ASCII depiction of Fran -- use command `frangen say` or  `frangen say frandom`
+
 This project uses modified angular commit format:
 
     name: Edits to the name list (example scopes: Celeb, Animal)
+    fran: Edits to the ASCII frans
     ci: Changes to our CI configuration files and scripts (example scopes: Travis, Semantic)
     docs: Documentation only changes
     feat: A new feature
