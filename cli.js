@@ -2,6 +2,7 @@
 const fs =require("fs");
 var cowsay = require("cowsay");
 const [,, ...args] = process.argv;
+const default_fran = fs.readFileSync("./frans/default.fran", "utf-8")
 
 fs.readFile(`${__dirname}/names.txt`, (err, data) => { 
     if (err) throw err;
@@ -13,6 +14,7 @@ fs.readFile(`${__dirname}/names.txt`, (err, data) => {
         }
     else if (args[0]=="all"){console.log(names)}
     else if (args[0]=="cowsay"){console.log(cowsay.say({text : names[Math.floor(Math.random()*names.length)], e : "oO", T : "U "}))}
+    else if (args[0]=="say"){console.log(default_fran.replace("$name", names[Math.floor(Math.random()*names.length)]))}
     else console.log("Unrecognised command line option");
     }
 );
