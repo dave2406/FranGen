@@ -12,6 +12,7 @@ The command `frangen cowsay` will generate a fran to be read by a cow.
 This project uses modified angular commit format:
 
     name: Edits to the name list (example scopes: Celeb, Animal)
+    fran: Edits to the ASCII frans
     ci: Changes to our CI configuration files and scripts (example scopes: Travis, Semantic)
     docs: Documentation only changes
     feat: A new feature
