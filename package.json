@@ -11,7 +11,11 @@
     "frangen": "./cli.js"
   },
   "files": [
-    "names.txt"
+    "names.txt",
+    "frans/default.fran",
+    "frans/astronaut.fran",
+    "frans/cowboy.fran",
+    "frans/mario.fran"
   ],
   "author": "Dave",
   "license": "GPL-3.0-or-later",
