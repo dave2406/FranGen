@@ -1,11 +1,12 @@
 #!/usr/bin/env node
 const fs =require("fs");
+const path = require("path")
 var cowsay = require("cowsay");
 const [,, ...args] = process.argv;
-const default_fran = fs.readFileSync("./frans/default.fran", "utf-8")
-const cowboy_fran = fs.readFileSync("./frans/cowboy.fran", "utf-8")
-const astronaut_fran = fs.readFileSync("./frans/astronaut.fran", "utf-8")
-const mario_fran = fs.readFileSync("./frans/mario.fran", "utf-8")
+const default_fran = fs.readFileSync(path.join(__dirname, '/frans/default.fran'), "utf-8")
+const cowboy_fran = fs.readFileSync(path.join(__dirname, '/frans/cowboy.fran'), "utf-8")
+const astronaut_fran = fs.readFileSync(path.join(__dirname, '/frans/astronaut.fran'), "utf-8")
+const mario_fran = fs.readFileSync(path.join(__dirname, '/frans/mario.fran'), "utf-8")
 
 fs.readFile(`${__dirname}/names.txt`, (err, data) => { 
     if (err) throw err;
