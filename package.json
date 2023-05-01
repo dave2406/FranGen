@@ -24,7 +24,7 @@
     "url": "https://github.com/dave2406/FranGen.git"
   },
   "devDependencies": {
-    "semantic-release": "^15.13.12"
+    "semantic-release": "^21.0.2"
   },
   "release": {
     "plugins": [
